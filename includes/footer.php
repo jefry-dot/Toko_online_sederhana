@@ -10,7 +10,7 @@
                 <h3>Kategori</h3>
                 <ul>
                     <?php foreach (getCategories($pdo) as $category): ?>
-                        <li><a href="products/index.php?category=<?= $category['id'] ?>"><?= $category['name'] ?></a></li>
+                        <li><a href="<?= $base_url ?>ads/index.php?category=<?= $category['id'] ?>"><?= $category['name'] ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
@@ -25,6 +25,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="<?= $base_url ?>script.js"></script>
 </body>
 </html>
